@@ -1,5 +1,10 @@
-properties([[$class: 'GithubProjectProperty', displayName: '', projectUrlStr: 'https://github.com/saikadiyala1994/webhookrepo.git/'], pipelineTriggers([])])
-pipeline {
+#!/usr/bin/env groovy
+properties([
+    [$class: 'GithubProjectProperty',
+    displayName: '',
+    projectUrlStr: 'https://github.com/saikadiyala1994/testingrepo.git/'],
+    pipelineTriggers([githubPush()])])
+    pipeline {
     agent any 
 
     stages {
