@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps { 
-                echo 'hai' 
+                sh "touch hello" 
             }
         }
         stage('Test'){
