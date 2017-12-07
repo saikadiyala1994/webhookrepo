@@ -11,7 +11,7 @@ properties([
         stage('Build') { 
             steps { 
                 sh "touch hello" 
-                sh "touch hello2"
+                sh "touch hello3"
             }
         }
         stage('Test'){
